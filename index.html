@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chai Tapri Radio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Fullscreen Video Background -->
+    <video autoplay loop muted playsinline id="bg-video">
+      <source src="chai_ki_tapri_wali_vibe_aani_c.mp4" type="video/mp4" />
+    </video>
+    <!-- Main Page Layout -->
+    <div class="container">
+      <!-- Header Section -->
+      <div class="header">
+        <h1 class="main-title">
+          <span class="hindi-text">चाय</span>
+          <span class="italic-text">Tapri</span> ☕
+        </h1>
+        <p class="subtitle">Cutting chai & Old melodies</p>
+      </div>
+      <!-- Glassmorphism Player Card -->
+      <div class="player-card">
+        <!-- Current Song -->
+        <p id="track-title" class="track-title">Press Play to Start</p>
+        <!-- Artist -->
+        <p id="track-artist" class="track-artist">—</p>
+        <!-- Navigation Buttons -->
+        <div class="button-group">
+          <button id="prev-btn" class="nav-btn">⏮ Prev</button>
+          <button id="play-btn" class="play-btn">▶ Play Radio</button>
+          <button id="next-btn" class="nav-btn">Next ⏭</button>
+        </div>
+        <!-- Music Progress -->
+        <div class="progress-container">
+          <input type="range" id="progress-bar" min="0" max="100" value="0" />
+          <div class="time-container">
+            <span id="current-time"> 0:00 </span>
+            <span id="duration"> 0:00 </span>
+          </div>
+        </div>
+        <!-- Music Volume -->
+        <div class="volume-container">
+          <label for="music-vol" class="volume-label"> 🎵 Music Volume </label>
+          <input
+            type="range"
+            id="music-vol"
+            min="0"
+            max="1"
+            step="0.01"
+            value="0.7"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
